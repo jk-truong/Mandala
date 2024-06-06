@@ -11,7 +11,7 @@
 		425D20982C110D4700126388 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425D208F2C110D4700126388 /* UIImage+Extension.swift */; };
 		425D20992C110D4700126388 /* MoodEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425D20902C110D4700126388 /* MoodEntry.swift */; };
 		425D209A2C110D4700126388 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 425D20912C110D4700126388 /* LaunchScreen.storyboard */; };
-		425D209B2C110D4700126388 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425D20922C110D4700126388 /* ViewController.swift */; };
+		425D209B2C110D4700126388 /* MoodSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425D20922C110D4700126388 /* MoodSelectionViewController.swift */; };
 		425D209C2C110D4700126388 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425D20932C110D4700126388 /* UIColor+Extension.swift */; };
 		425D209D2C110D4700126388 /* Mood.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425D20942C110D4700126388 /* Mood.swift */; };
 		425D209E2C110D4700126388 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425D20952C110D4700126388 /* AppDelegate.swift */; };
@@ -44,7 +44,7 @@
 		425D208F2C110D4700126388 /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		425D20902C110D4700126388 /* MoodEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoodEntry.swift; sourceTree = "<group>"; };
 		425D20912C110D4700126388 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		425D20922C110D4700126388 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		425D20922C110D4700126388 /* MoodSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoodSelectionViewController.swift; sourceTree = "<group>"; };
 		425D20932C110D4700126388 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		425D20942C110D4700126388 /* Mood.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mood.swift; sourceTree = "<group>"; };
 		425D20952C110D4700126388 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -116,7 +116,7 @@
 				425D20962C110D4700126388 /* SceneDelegate.swift */,
 				425D20932C110D4700126388 /* UIColor+Extension.swift */,
 				425D208F2C110D4700126388 /* UIImage+Extension.swift */,
-				425D20922C110D4700126388 /* ViewController.swift */,
+				425D20922C110D4700126388 /* MoodSelectionViewController.swift */,
 				953433B1234D97F700886B44 /* Assets.xcassets */,
 				953433B6234D97F700886B44 /* Info.plist */,
 				425D208D2C110D4600126388 /* Mandala-Bridging-Header.h */,
@@ -277,7 +277,7 @@
 				425D209E2C110D4700126388 /* AppDelegate.swift in Sources */,
 				425D209F2C110D4700126388 /* SceneDelegate.swift in Sources */,
 				425D209D2C110D4700126388 /* Mood.swift in Sources */,
-				425D209B2C110D4700126388 /* ViewController.swift in Sources */,
+				425D209B2C110D4700126388 /* MoodSelectionViewController.swift in Sources */,
 				425D20982C110D4700126388 /* UIImage+Extension.swift in Sources */,
 				425D20992C110D4700126388 /* MoodEntry.swift in Sources */,
 				425D209C2C110D4700126388 /* UIColor+Extension.swift in Sources */,

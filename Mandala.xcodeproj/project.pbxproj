@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		425153902C137E3F00DFDA89 /* MoodListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4251538F2C137E3F00DFDA89 /* MoodListViewController.swift */; };
+		425153922C13973100DFDA89 /* MoodsConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425153912C13973100DFDA89 /* MoodsConfigurable.swift */; };
 		425D20972C110D4700126388 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 425D208E2C110D4700126388 /* Main.storyboard */; };
 		425D20982C110D4700126388 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425D208F2C110D4700126388 /* UIImage+Extension.swift */; };
 		425D20992C110D4700126388 /* MoodEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425D20902C110D4700126388 /* MoodEntry.swift */; };
@@ -39,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4251538F2C137E3F00DFDA89 /* MoodListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodListViewController.swift; sourceTree = "<group>"; };
+		425153912C13973100DFDA89 /* MoodsConfigurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodsConfigurable.swift; sourceTree = "<group>"; };
 		425D208D2C110D4600126388 /* Mandala-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Mandala-Bridging-Header.h"; sourceTree = "<group>"; };
 		425D208E2C110D4700126388 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		425D208F2C110D4700126388 /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
@@ -120,6 +124,8 @@
 				953433B1234D97F700886B44 /* Assets.xcassets */,
 				953433B6234D97F700886B44 /* Info.plist */,
 				425D208D2C110D4600126388 /* Mandala-Bridging-Header.h */,
+				4251538F2C137E3F00DFDA89 /* MoodListViewController.swift */,
+				425153912C13973100DFDA89 /* MoodsConfigurable.swift */,
 			);
 			path = Mandala;
 			sourceTree = "<group>";
@@ -275,8 +281,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				425D209E2C110D4700126388 /* AppDelegate.swift in Sources */,
+				425153902C137E3F00DFDA89 /* MoodListViewController.swift in Sources */,
 				425D209F2C110D4700126388 /* SceneDelegate.swift in Sources */,
 				425D209D2C110D4700126388 /* Mood.swift in Sources */,
+				425153922C13973100DFDA89 /* MoodsConfigurable.swift in Sources */,
 				425D209B2C110D4700126388 /* MoodSelectionViewController.swift in Sources */,
 				425D20982C110D4700126388 /* UIImage+Extension.swift in Sources */,
 				425D20992C110D4700126388 /* MoodEntry.swift in Sources */,

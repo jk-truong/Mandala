@@ -17,8 +17,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oME-04-Kn4">
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xoE-sU-Uez">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <connections>
+                                    <segue destination="QJr-sP-cOL" kind="embed" identifier="embedContainerViewController" id="Thq-md-tbg"/>
+                                </connections>
                             </containerView>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xZ4-b8-a13">
                                 <rect key="frame" x="0.0" y="752" width="393" height="100"/>
@@ -44,13 +47,16 @@
                             </visualEffectView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jwt-EH-mYU">
                                 <rect key="frame" x="98.333333333333329" y="684" width="196.33333333333337" height="48"/>
-                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="Vew-sl-yo8"/>
                                 </constraints>
                                 <state key="normal" title="Add Mood">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="addMoodTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BJv-hP-0wL"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="uii-W1-ltK"/>
@@ -58,18 +64,18 @@
                         <constraints>
                             <constraint firstItem="xZ4-b8-a13" firstAttribute="trailing" secondItem="pPk-Ww-hHa" secondAttribute="trailing" id="5bf-SW-RXz"/>
                             <constraint firstItem="jwt-EH-mYU" firstAttribute="centerX" secondItem="pPk-Ww-hHa" secondAttribute="centerX" id="8gs-56-4lP"/>
-                            <constraint firstAttribute="trailing" secondItem="oME-04-Kn4" secondAttribute="trailing" id="H51-Gz-5X4"/>
-                            <constraint firstAttribute="bottom" secondItem="oME-04-Kn4" secondAttribute="bottom" id="MRZ-tF-voD"/>
-                            <constraint firstItem="oME-04-Kn4" firstAttribute="leading" secondItem="pPk-Ww-hHa" secondAttribute="leading" id="Pfj-pv-NyX"/>
+                            <constraint firstAttribute="bottom" secondItem="xoE-sU-Uez" secondAttribute="bottom" id="BGD-yb-eVj"/>
+                            <constraint firstAttribute="trailing" secondItem="xoE-sU-Uez" secondAttribute="trailing" id="Ghx-0Y-6Yz"/>
+                            <constraint firstItem="xoE-sU-Uez" firstAttribute="top" secondItem="pPk-Ww-hHa" secondAttribute="top" id="MVu-vc-BpD"/>
                             <constraint firstItem="xZ4-b8-a13" firstAttribute="bottom" secondItem="pPk-Ww-hHa" secondAttribute="bottom" id="XGg-N4-pwd"/>
-                            <constraint firstItem="oME-04-Kn4" firstAttribute="top" secondItem="pPk-Ww-hHa" secondAttribute="top" id="Ze5-JY-ueC"/>
                             <constraint firstItem="xZ4-b8-a13" firstAttribute="leading" secondItem="pPk-Ww-hHa" secondAttribute="leading" id="gE6-bp-9ad"/>
+                            <constraint firstItem="xoE-sU-Uez" firstAttribute="leading" secondItem="pPk-Ww-hHa" secondAttribute="leading" id="p1y-af-WPW"/>
                             <constraint firstItem="xZ4-b8-a13" firstAttribute="top" secondItem="jwt-EH-mYU" secondAttribute="bottom" constant="20" id="pwj-QF-h4n"/>
                             <constraint firstItem="jwt-EH-mYU" firstAttribute="width" secondItem="uii-W1-ltK" secondAttribute="width" multiplier="0.5" id="tDK-vp-RRX"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="addMoodButton" destination="jwt-EH-mYU" id="wWe-T6-lsA"/>
+                        <outlet property="addMoodButton" destination="jwt-EH-mYU" id="WHU-TX-DWf"/>
                         <outlet property="stackView" destination="YXi-Bp-aMB" id="fwN-Ai-8ZN"/>
                     </connections>
                 </viewController>
@@ -77,13 +83,57 @@
             </objects>
             <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
         </scene>
+        <!--Mood List View Controller-->
+        <scene sceneID="5Kl-tz-lAd">
+            <objects>
+                <tableViewController id="QJr-sP-cOL" customClass="MoodListViewController" customModule="Mandala" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="oTU-aF-8gt">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="UITableViewCell" textLabel="dCD-yK-zlQ" detailTextLabel="Tlh-md-pLc" style="IBUITableViewCellStyleSubtitle" id="oHq-A5-oMd">
+                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oHq-A5-oMd" id="paf-zl-Qqc">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dCD-yK-zlQ">
+                                            <rect key="frame" x="20" y="6.0000000000000009" width="25" height="14.333333333333334"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Tlh-md-pLc">
+                                            <rect key="frame" x="19.999999999999996" y="22.333333333333336" width="43.666666666666664" height="14.333333333333334"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="QJr-sP-cOL" id="Bgk-5G-bJs"/>
+                            <outlet property="delegate" destination="QJr-sP-cOL" id="gXu-eu-jHZ"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nWX-lj-4Db" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="927" y="-27"/>
+        </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

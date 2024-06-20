@@ -24,29 +24,33 @@
                                 </connections>
                             </containerView>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xZ4-b8-a13">
-                                <rect key="frame" x="0.0" y="752" width="393" height="100"/>
+                                <rect key="frame" x="0.0" y="744" width="393" height="108"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="NFz-Kr-rq2">
-                                    <rect key="frame" x="0.0" y="0.0" width="393" height="100"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="108"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="YXi-Bp-aMB">
-                                            <rect key="frame" x="8" y="8" width="377" height="50"/>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zgk-dc-vRZ" customClass="ImageSelector" customModule="Mandala" customModuleProvider="target">
+                                            <rect key="frame" x="8" y="16" width="377" height="50"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="50" id="n9C-us-FGq"/>
+                                                <constraint firstAttribute="height" constant="50" id="BFL-jQ-GbR"/>
                                             </constraints>
-                                        </stackView>
+                                            <connections>
+                                                <action selector="moodSelectionChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="kGH-lg-iLQ"/>
+                                            </connections>
+                                        </view>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="YXi-Bp-aMB" firstAttribute="top" secondItem="NFz-Kr-rq2" secondAttribute="top" constant="8" id="5Rc-Vf-u4x"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="YXi-Bp-aMB" secondAttribute="bottom" id="D30-O3-dR9"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="YXi-Bp-aMB" secondAttribute="trailing" id="STh-IE-402"/>
-                                        <constraint firstItem="YXi-Bp-aMB" firstAttribute="leading" secondItem="NFz-Kr-rq2" secondAttribute="leadingMargin" id="Vf3-yf-3CE"/>
+                                        <constraint firstItem="zgk-dc-vRZ" firstAttribute="top" secondItem="NFz-Kr-rq2" secondAttribute="top" constant="16" id="6BZ-xG-LzT"/>
+                                        <constraint firstItem="zgk-dc-vRZ" firstAttribute="leading" secondItem="NFz-Kr-rq2" secondAttribute="leading" constant="8" id="84y-eS-aAt"/>
+                                        <constraint firstAttribute="trailing" secondItem="zgk-dc-vRZ" secondAttribute="trailing" constant="8" id="mtt-XL-wct"/>
+                                        <constraint firstAttribute="bottom" secondItem="zgk-dc-vRZ" secondAttribute="bottom" constant="42" id="wB6-CK-txN"/>
                                     </constraints>
                                 </view>
                                 <blurEffect style="regular"/>
                             </visualEffectView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jwt-EH-mYU">
-                                <rect key="frame" x="98.333333333333329" y="684" width="196.33333333333337" height="48"/>
+                                <rect key="frame" x="98.333333333333329" y="676" width="196.33333333333337" height="48"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="Vew-sl-yo8"/>
@@ -76,12 +80,12 @@
                     </view>
                     <connections>
                         <outlet property="addMoodButton" destination="jwt-EH-mYU" id="WHU-TX-DWf"/>
-                        <outlet property="stackView" destination="YXi-Bp-aMB" id="fwN-Ai-8ZN"/>
+                        <outlet property="moodSelector" destination="zgk-dc-vRZ" id="w26-rZ-bDX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
+            <point key="canvasLocation" x="87.786259541984734" y="6.3380281690140849"/>
         </scene>
         <!--Mood List View Controller-->
         <scene sceneID="5Kl-tz-lAd">
@@ -133,7 +137,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

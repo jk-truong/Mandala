@@ -18,6 +18,7 @@
 		425D209D2C110D4700126388 /* Mood.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425D20942C110D4700126388 /* Mood.swift */; };
 		425D209E2C110D4700126388 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425D20952C110D4700126388 /* AppDelegate.swift */; };
 		425D209F2C110D4700126388 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425D20962C110D4700126388 /* SceneDelegate.swift */; };
+		5EE04B832C24B4990010AD7D /* ImageSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE04B822C24B4990010AD7D /* ImageSelector.swift */; };
 		953433B2234D97F700886B44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 953433B1234D97F700886B44 /* Assets.xcassets */; };
 		953433C0234D97F700886B44 /* MandalaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953433BF234D97F700886B44 /* MandalaTests.swift */; };
 		953433CB234D97F700886B44 /* MandalaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953433CA234D97F700886B44 /* MandalaUITests.swift */; };
@@ -53,6 +54,7 @@
 		425D20942C110D4700126388 /* Mood.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mood.swift; sourceTree = "<group>"; };
 		425D20952C110D4700126388 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		425D20962C110D4700126388 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5EE04B822C24B4990010AD7D /* ImageSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSelector.swift; sourceTree = "<group>"; };
 		953433A5234D97F600886B44 /* Mandala.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mandala.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		953433B1234D97F700886B44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		953433B6234D97F700886B44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				425D208D2C110D4600126388 /* Mandala-Bridging-Header.h */,
 				4251538F2C137E3F00DFDA89 /* MoodListViewController.swift */,
 				425153912C13973100DFDA89 /* MoodsConfigurable.swift */,
+				5EE04B822C24B4990010AD7D /* ImageSelector.swift */,
 			);
 			path = Mandala;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 				425D209B2C110D4700126388 /* MoodSelectionViewController.swift in Sources */,
 				425D20982C110D4700126388 /* UIImage+Extension.swift in Sources */,
 				425D20992C110D4700126388 /* MoodEntry.swift in Sources */,
+				5EE04B832C24B4990010AD7D /* ImageSelector.swift in Sources */,
 				425D209C2C110D4700126388 /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
